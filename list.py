@@ -1,4 +1,3 @@
-
 numbers = [10, 20, 30, 40]
 
 # Access list items
@@ -41,3 +40,50 @@ for m in marks:
 average = total / len(marks)
 print('Total:', total)
 print('Average:', average)
+
+
+# Task 1: Create a list of 5 numbers and print sum
+numbers = [10, 20, 30, 40, 50]
+total = 0
+for num in numbers:
+    total += num
+
+print('Sum:',total)
+
+# Task 2: Find maximum value in list
+numbers = [12, 45, 7, 89, 34, 67, 99]
+max_value = numbers[0]
+for n in numbers:
+    if n > max_value:
+        max_value = n
+
+print('Max Value:', max_value)
+
+# Task 3: Count how many marks are above 75
+marks = [70, 85, 60, 90, 75, 88]
+count = 0
+for m in marks:
+    if m > 75:
+        count += 1
+
+print('Marks above 75:', count)
+
+# Task 4: Replace lowest mark with 0
+marks = [70, 85, 60, 90, 75]
+min_marks = marks[0]
+for m in marks:
+    if m < min_marks:
+        min_marks = m
+
+index = marks.index(min_marks)
+marks[index] = 0
+
+print('Updated marks:', marks)
+
+# Task 5: Reverse a list using loop
+numbers = [1, 2, 3, 4, 5]
+reversed_list = []
+for i in range(len(numbers)-1, -1, -1):
+    reversed_list.append(numbers[i])
+
+print('Reversed list:', reversed_list)
