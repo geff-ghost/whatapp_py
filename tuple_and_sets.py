@@ -59,4 +59,42 @@ visitors = ['A', 'B', 'A', 'C', 'B', 'D']
 unique_visitors = set(visitors)
 print('Total unique visitors:', unique_visitors)
 
+print()
+# Qtn1: Convert list with duplicates to unique values
+numbers = [1, 1, 2, 2, 3, 1, 5, 2, 6, 4 ,4, 2, 4]
+unique_values = set(numbers)
+print(unique_values)
 
+print()
+
+# Qtn2: Check if value exists in a set
+numbers = {1, 2, 3, 4, 5, 2}
+value = int(input('Enter a value to check: '))
+
+if value in numbers:
+    print('Value exists')
+else:
+    print('Value does not exist')
+
+print()
+
+# Qtn3: Find common elements between two lists
+lst1 = [1, 2, 3, 4]
+lst2 = [3, 4, 5, 6]
+print(set(lst1) & set(lst2))
+
+print()
+
+# Qtn4: Use tupls to store date and print nicely
+date = (22, 'January', 2026)
+day, month, year = date
+print('Date:', day, month, year)
+
+print()
+
+# Qtn5: Swap two variables using tuple
+a = 10
+b = 20
+a, b = b, a
+print('a:', a)
+print('b', b)
