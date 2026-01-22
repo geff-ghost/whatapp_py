@@ -30,3 +30,28 @@ print(a)
 print(b)
 print(c)
 
+# Sets
+numbers = {10, 20, 30, 40}
+duplicates = {1, 2, 2, 2, 3, 3}
+print(duplicates)
+
+# Add and Remove Items
+numbers.add(50)
+numbers.remove(40)
+numbers.discard(100)
+print(numbers)
+
+# Loop through a set
+for n in numbers:
+    print(n)
+
+print()
+
+# Set Operations
+a = {1, 2, 3}
+b = {3, 4, 5}
+print('Union:', a|b)
+print('Intersection:', a&b)
+print('Difference:', a-b)
+
+
