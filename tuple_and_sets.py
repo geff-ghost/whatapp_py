@@ -54,4 +54,9 @@ print('Union:', a|b)
 print('Intersection:', a&b)
 print('Difference:', a-b)
 
+# Unique Visitors
+visitors = ['A', 'B', 'A', 'C', 'B', 'D']
+unique_visitors = set(visitors)
+print('Total unique visitors:', unique_visitors)
+
 
