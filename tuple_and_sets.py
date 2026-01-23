@@ -67,14 +67,14 @@ print(unique_values)
 
 print()
 
-# Qtn2: Check if value exists in a set
-numbers = {1, 2, 3, 4, 5, 2}
-value = int(input('Enter a value to check: '))
+# # Qtn2: Check if value exists in a set
+# numbers = {1, 2, 3, 4, 5, 2}
+# value = int(input('Enter a value to check: '))
 
-if value in numbers:
-    print('Value exists')
-else:
-    print('Value does not exist')
+# if value in numbers:
+#     print('Value exists')
+# else:
+#     print('Value does not exist')
 
 print()
 
@@ -98,3 +98,14 @@ b = 20
 a, b = b, a
 print('a:', a)
 print('b', b)
+
+
+print('\n---statistics---')
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a & b) # Intersection
+print(a | b) # Union
+print(a - b) # whats found in a but not in b
+print(b - a) # whats found in b but not in a
+print(a ^ b)
