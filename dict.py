@@ -53,3 +53,57 @@ average = total / len(marks)
 print(f'Total: {total}')
 print(f'Average: {average:.2f}')
 
+
+print('\n---Practice tasks---\n')
+# Create a dictionary with 5 products with prices
+# Find total price of all products
+# Find product with highest price
+# Update price of one product
+# Remove a product
+
+
+# Task 1. Create a dictionary of 5 products with prices
+products = {
+    'Laptop': 55000,
+    'Mouse': 500,
+    'Keyboard': 1200,
+    'Monitor': 15000,
+    'Headphones': 2500,
+    'Table': 200000,
+    'Mat': 500
+}
+print(products)
+
+print()
+
+# Task 2. Find the total price of all products
+total = 0
+for m in products.values():
+    total = total + m
+print(f'Total price ${total}')
+
+print()
+
+# Task 3. Find product with highest price
+highest_product = None
+highest_price = 0
+for product, price in products.items():
+    if price > highest_price:
+        highest_price = price
+        highest_product = product
+print(f'Highest price product {highest_product}')
+print(f'Price ${highest_price}')
+
+print()
+
+# Task 4. Update price of one product
+products['Mouse'] = 650
+print(f'Updated products: {products}')
+
+print()
+
+# Task 5. Remove a product
+products.pop('Keyboard')
+print(f'After removal: {products}')
+
+
