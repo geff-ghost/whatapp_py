@@ -19,9 +19,37 @@ print(student)
 student['marks'] = 89
 print(student)
 
-# Delete items
-del student['age']
-print(student)
+# loop through a dict
+# keys only
+for key in student.keys():
+    print(key)
 
-student.pop('marks')
-print(student)
+print()
+# values only
+for value in student.values():
+    print(value)
+
+print()
+# keys and values
+for key, value in student.items():
+    print(key, ':', value)
+
+print()
+# check existance
+if 'number' in student:
+    print('Key exists')
+
+print()
+# real example. Student marks record
+marks = {
+    'Math': 85, 
+    'Science': 90,
+    'English': 78
+}
+total = 0
+for m in marks.values():
+    total = total + m
+average = total / len(marks)
+print(f'Total: {total}')
+print(f'Average: {average:.2f}')
+
