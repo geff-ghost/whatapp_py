@@ -1,0 +1,3 @@
+Hello Python
+File handling is very easy.
+New line added
