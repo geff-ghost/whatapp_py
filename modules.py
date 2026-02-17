@@ -47,5 +47,4 @@ from datetime import datetime
 now = datetime.now()
 print(now)
 
-# Task 4. Import a function from module
 

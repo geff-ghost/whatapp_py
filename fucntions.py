@@ -54,6 +54,6 @@ def func(x):
 
 a = 5
 func(a)
-print(a)
+print
 
 
